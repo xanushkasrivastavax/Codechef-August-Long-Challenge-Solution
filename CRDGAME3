@@ -1,0 +1,47 @@
+import java.util.Scanner;
+class check1
+{
+    public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int t=sc.nextInt();
+        for(int i=0;i<t;i++)
+        {
+            int p=sc.nextInt();
+            int k=sc.nextInt();
+            int ct1=0;
+            int ct2=0;
+             if(p%9==0)
+	    {
+	        ct1=p/9;
+	    }
+	    if(p%9!=0)
+	    {
+	        ct1=(p/9)+1;
+	    }
+	    if(k%9==0)
+	    {
+	        ct2=k/9;
+	    }
+	     if(k%9!=0)
+	    {
+	        ct2=(k/9)+1;
+	    }
+	    if(ct1<ct2)
+	    {
+	        System.out.println("0 "+ct1);
+	    }
+	    else if(ct1>ct2)
+	    {
+	        System.out.println("1 "+ct2);
+	        
+	    }
+	    else if(ct1==ct2)
+	    {
+	        System.out.println("1 "+ct2);
+	    }
+	    ct1=0;
+	    ct2=0;
+        }
+    }
+}
